@@ -1,0 +1,13 @@
+{
+  "name": "chatdad",
+  "description": "",
+  "main": "",
+  "authors": [
+    "yalcinagirk <56399240+yalcinagirk@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yalcinagirk/chatdad",
+  "dependencies": {
+    "angular": "^1.7.9"
+  }
+}
