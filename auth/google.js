@@ -1,6 +1,6 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20');
-
+const findOrCreate = require('mongoose-find-or-create');
 // models
 const User = require('../models/users');
 
@@ -12,7 +12,6 @@ passport.use(
 	},
 	((accessToken, refreshToken, profile, done) => {
 		const data = profile._json;
-
 		User.findOrCreate({
 			'googleId': data.id
 		}, {
